@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chosatjogniya Imitation Jewellery</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+      line-height: 1.6;
+    }
+
+    header {
+      background: palevioletred;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      min-height: 560px;
+      display: flex;
+      align-items: center;
+      padding: 70px 7%;
+      color: white;
+      background:
+        linear-gradient(rgba(29, 13, 17, 0.62), rgba(35, 15, 20, .62)),
+        url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1600&q=80")
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: pink;
+      color: white;
+      padding: 13px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      background: peachpuff;
+    }
+
+    section {
+      padding: 65px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+      color: darkslategray;
+      font-size: 32px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px rgba(0,0,0,.10);
+      transition: transform .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 22px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: dimgray;
+      margin-bottom: 8px;
+    }
+
+    .about {
+      background: white;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px black;
+    }
+
+    .feature h3 {
+      color: brown;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    footer {
+      background: brown;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo">Chosatjogniya</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Marketing Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Style That Completes You</h1>
+      <p>
+        Discover beautiful imitation jewellery and cosmetics
+        for your everyday style and special occasions.
+      </p>
+
+      <a href="#products" class="btn">Explore Collection</a>
+      <a href="#contact" class="btn">Visit Our Store</a>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2 class="section-title">Our Products</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80"
+          alt="Imitation jewellery">
+        <div class="card-content">
+          <h3>Imitation Jewellery</h3>
+          <p>
+            Stylish earrings, necklaces, bracelets and other
+            fashionable accessories.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80"
+          alt="Cosmetic products">
+        <div class="card-content">
+          <h3>Cosmetic Products</h3>
+          <p>
+            Beauty and cosmetic products to complete your
+            everyday and special-occasion look.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80"
+          alt="Fashion jewellery">
+        <div class="card-content">
+          <h3>Latest Collection</h3>
+          <p>
+            Explore fashionable designs suitable for parties,
+            festivals, weddings and everyday wear.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="section-title">About Chosatjogniya</h2>
+
+    <p>
+      Chosatjogniya Imitation Jewellery is an offline retail store
+      offering imitation jewellery and cosmetic products.
+      Our digital marketing webpage helps customers discover
+      our products online and encourages them to visit our store.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Latest Styles</h3>
+        <p>Fashionable designs for different occasions.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Affordable</h3>
+        <p>Stylish products at accessible prices.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Variety</h3>
+        <p>Jewellery and cosmetics in one place.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Offline Store</h3>
+        <p>Visit our physical store to explore products.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Visit Our Store</h2>
+
+    <p><strong>Chosatjogniya Imitation Jewellery</strong></p>
+    <p>📍 Store Location: Add your actual store address</p>
+    <p>📞 Phone: Add your phone number</p>
+    <p>📱 WhatsApp / Instagram: Add your social-media details</p>
+
+    <br>
+
+    <a href="#" class="btn">Contact Us</a>
+    <a href="#" class="btn">Visit Our Store</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Chosatjogniya Imitation Jewellery | Digital Marketing Webpage</p>
+  </footer>
+
+</body>
+</html> 
