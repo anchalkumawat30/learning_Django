@@ -22,4 +22,5 @@ from home.views import *
 urlpatterns = [
     path("",include("home.urls")),
     path("admin/", admin.site.urls),
+    path("chat/",include("messaging_app.urls"))
 ]
